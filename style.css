@@ -1,0 +1,152 @@
+:root {
+	--primary-pale-blue:hsl(225, 100%,94%);
+    --primary-color:hsl(245, 75%, 52%);
+    --primary-color-active:hsl(245, 83%, 68%);
+    --primary-font:hsl(223, 47%, 23%);
+    --primary-font-active:hsl(224, 23%, 55%);
+    --secundary-pale-blue:hsl(225, 100%, 98%);
+    --neutral-white:hsl(0, 0%, 100%);	
+    --neutral-light-purple:hsl(267, 98%, 74%);
+    --primary-font-family:'Red Hat Display', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.card{
+    width: 400px;
+    background-color: #FFFFFF;  
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 10px 10px 0 hsl(245, 75%, 52%, 0.1);
+}
+
+.card-img img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-info{
+    padding: 1.5em;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    padding: 15px;
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.card-text{
+    padding: 0 2em;
+    font-size: .9rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: .5em;
+    margin: 1.5em;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.planName{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.planName p:first-of-type{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.change{
+   color: inherit;
+   font-weight: 900;
+   font-size: 0.8rem;
+   color: hsl(245, 75%, 52%);
+}
+
+.change:hover{
+    color: hsl(244, 81%, 68%);
+    text-decoration: none;
+}
+
+.card-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5em;
+    gap: 30px;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    border: 0;
+    border-radius: 0.7em;
+    padding: 1em;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.payment:hover {
+    background-color: hsl(245, 83%, 68%);
+    cursor: pointer;
+}
+
+.card-btn a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+
+.card-btn a:hover{
+    color:hsl(223, 47%, 23%);
+}
+
+@media(max-width: 576px){
+    .card{
+        width: 350px;
+    }
+
+    .title{
+        margin: 0;
+    }
+
+    .plan{
+        margin: 0 1em;
+    }
+
+    .card-text{
+        padding: 1.5rem 2.5rem;
+    }
+
+    .card-btn{
+        margin: 1.5rem 1rem;
+    }
+}
